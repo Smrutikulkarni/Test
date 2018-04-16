@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Panther">
+	<listeners>
+		<listener class-name="com.automation.framework.core.FrameworkListener" />
+	</listeners>
+	<parameter name="client" value="TID" />
+	<parameter name="environment" value="SIT" />
+	<parameter name="browser" value="Chrome" />
+
+
+	<test name="Login">
+		<classes>
+			<class name="com.automation.panther.testScripts.login.Login" />
+		</classes>
+	</test>
+
+	
+</suite>

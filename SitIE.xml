@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Panther">
+	<listeners>
+		<listener class-name="com.panther.core.FrameworkListener" />
+	</listeners>
+	<parameter name="client" value="TID" />
+	<parameter name="environment" value="SIT" />
+	<parameter name="browser" value="IE" />
+
+	<test name="CardStatus">
+		<classes>
+			<class name="com.panther.testScripts.CardStatus" />
+		</classes>
+	</test>
+	<test name="CardStatusRestrictedPortalAccess">
+		<classes>
+			<class name="com.panther.testScripts.CardStatusRestrictedPortalAccess" />
+		</classes>
+	</test>
+	<test name="CashoutToBankAcc">
+		<classes>
+			<class name="com.panther.testScripts.CashoutToBankAcc" />
+		</classes>
+	</test>
+	<test name="ContactUs">
+		<classes>
+			<class name="com.panther.testScripts.ContactUs" />
+		</classes>
+	</test>
+	<test name="CurrencyToCurrency">
+		<classes>
+			<class name="com.panther.testScripts.CurrencyToCurrency" />
+		</classes>
+	</test>
+	<test name="Estatements">
+		<classes>
+			<class name="com.panther.testScripts.Estatements" />
+		</classes>
+	</test>
+	<test name="FeesAndLimits">
+		<classes>
+			<class name="com.panther.testScripts.FeesAndLimits" />
+		</classes>
+	</test>
+	<test name="GetYourCard">
+		<classes>
+			<class name="com.panther.testScripts.GetYourCard" />
+		</classes>
+	</test>
+	<test name="Help">
+		<classes>
+			<class name="com.panther.testScripts.Help" />
+		</classes>
+	</test>
+	<test name="HowDoYouGetOne">
+		<classes>
+			<class name="com.panther.testScripts.HowDoYouGetOne" />
+		</classes>
+	</test>
+	<test name="LoginForgotPassword">
+		<classes>
+			<class name="com.panther.testScripts.LoginForgotPassword" />
+		</classes>
+	</test>
+	<test name="Login">
+		<classes>
+			<class name="com.panther.testScripts.Login" />
+		</classes>
+	</test>
+	<test name="Logout">
+		<classes>
+			<class name="com.panther.testScripts.Logout" />
+		</classes>
+	</test>
+	<test name="PaymentSettings">
+		<classes>
+			<class name="com.panther.testScripts.PaymentSettings" />
+		</classes>
+	</test>
+	<test name="PersonalDetailsErrorMessaging">
+		<classes>
+			<class name="com.panther.testScripts.PersonalDetailsErrorMessaging" />
+		</classes>
+	</test>
+	<test name="ReloadBankTransfer">
+		<classes>
+			<class name="com.panther.testScripts.ReloadBankTransfer" />
+		</classes>
+	</test>
+	<test name="ReloadBankTransferNotLoggedIn">
+		<classes>
+			<class name="com.panther.testScripts.ReloadBankTransferNotLoggedIn" />
+		</classes>
+	</test>
+	<test name="ReloadBpay">
+		<classes>
+			<class name="com.panther.testScripts.ReloadBpay" />
+		</classes>
+	</test>
+	<test name="ReloadBpayNotLoggedIn">
+		<classes>
+			<class name="com.panther.testScripts.ReloadBpayNotLoggedIn" />
+		</classes>
+	</test>
+	<test name="ReloadDebitCard">
+		<classes>
+			<class name="com.panther.testScripts.ReloadDebitCard" />
+		</classes>
+	</test>
+	<test name="SetDefaultCurrency">
+		<classes>
+			<class name="com.panther.testScripts.SetDefaultCurrency" />
+		</classes>
+	</test>
+	<test name="SettingsChangePassword">
+		<classes>
+			<class name="com.panther.testScripts.SettingsChangePassword" />
+		</classes>
+	</test>
+	<test name="SettingsChangePersonalDetails">
+		<classes>
+			<class name="com.panther.testScripts.SettingsChangePassword" />
+		</classes>
+	</test>
+	<test name="UnauthorisedNavigation">
+		<classes>
+			<class name="com.panther.testScripts.UnauthorisedNavigation" />
+		</classes>
+	</test>
+	
+</suite>

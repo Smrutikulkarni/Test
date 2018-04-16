@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Panther">
+	<listeners>
+		<listener class-name="com.panther.core.FrameworkListener" />
+	</listeners>
+	<parameter name="client" value="TID" />
+	<parameter name="environment" value="UAT" />
+	<parameter name="browser" value="IE" />
+
+	<test name="CardStatus">
+		<classes>
+			<class name="com.panther.testScripts.cardStatus.CardStatus" />
+		</classes>
+	</test>
+	<test name="CardStatusSuspendedSanctionsMatch">
+		<classes>
+			<class name="com.panther.testScripts.cardStatus.CardStatusSuspendedSanctionsMatch" />
+		</classes>
+	</test>
+		<test name="CardStatusPlasticInactive">
+		<classes>
+			<class name="com.panther.testScripts.cardStatus.CardStatusFraud" />
+		</classes>
+	</test>
+	<test name="CardStatusRestrictedPortalAccess">
+		<classes>
+			<class name="com.panther.testScripts.cardStatus.CardStatusRestrictedPortalAccess" />
+		</classes>
+	</test>
+	<test name="CashoutToBankAcc">
+		<classes>
+			<class name="com.panther.testScripts.transferMoney.CashoutToBankAcc" />
+		</classes>
+	</test>
+	<test name="ContactUs">
+		<classes>
+			<class name="com.panther.testScripts.unauthorisedNavigation.ContactUs" />
+		</classes>
+	</test>
+	<test name="CurrencyToCurrency">
+		<classes>
+			<class name="com.panther.testScripts.transferMoney.CurrencyToCurrency" />
+		</classes>
+	</test>
+	<test name="Estatements">
+		<classes>
+			<class name="com.panther.testScripts.transactionHistory.Estatements" />
+		</classes>
+	</test>
+	<test name="TransactionHistory">
+		<classes>
+			<class name="com.panther.testScripts.transactionHistory.TransactionHistory" />
+		</classes>
+	</test>
+	<test name="FeesAndLimits">
+		<classes>
+			<class name="com.panther.testScripts.unauthorisedNavigation.FeesAndLimits" />
+		</classes>
+	</test>
+	<test name="GetYourCard">
+		<classes>
+			<class name="com.panther.testScripts.buyCard.GetYourCard" />
+		</classes>
+	</test>
+	<test name="Help">
+		<classes>
+			<class name="com.panther.testScripts.unauthorisedNavigation.Help" />
+		</classes>
+	</test>
+	<test name="HowDoYouGetOne">
+		<classes>
+			<class name="com.panther.testScripts.unauthorisedNavigation.HowDoYouGetOne" />
+		</classes>
+	</test>
+	<test name="LoginForgotPassword">
+		<classes>
+			<class name="com.panther.testScripts.login.LoginForgotPassword" />
+		</classes>
+	</test>
+	<test name="Login">
+		<classes>
+			<class name="com.panther.testScripts.login.Login" />
+		</classes>
+	</test>
+	<test name="Logout">
+		<classes>
+			<class name="com.panther.testScripts.logout.Logout" />
+		</classes>
+	</test>
+	<test name="PaymentSettings">
+		<classes>
+			<class name="com.panther.testScripts.settings.PaymentSettings" />
+		</classes>
+	</test>
+	<test name="PersonalDetailsErrorMessaging">
+		<classes>
+			<class name="com.panther.testScripts.settings.PersonalDetailsErrorMessaging" />
+		</classes>
+	</test>
+	<test name="ReloadBankTransfer">
+		<classes>
+			<class name="com.panther.testScripts.reload.ReloadBankTransfer" />
+		</classes>
+	</test>
+	<test name="ReloadBankTransferNotLoggedIn">
+		<classes>
+			<class name="com.panther.testScripts.reload.ReloadBankTransferNotLoggedIn" />
+		</classes>
+	</test>
+	<test name="ReloadBpay">
+		<classes>
+			<class name="com.panther.testScripts.reload.ReloadBpay" />
+		</classes>
+	</test>
+	<test name="ReloadBpayNotLoggedIn">
+		<classes>
+			<class name="com.panther.testScripts.reload.ReloadBpayNotLoggedIn" />
+		</classes>
+	</test>
+	<test name="ReloadDebitCard">
+		<classes>
+			<class name="com.panther.testScripts.reload.ReloadDebitCard" />
+		</classes>
+	</test>
+	<test name="SetDefaultCurrency">
+		<classes>
+			<class name="com.panther.testScripts.settings.SetDefaultCurrency" />
+		</classes>
+	</test>
+	<test name="SettingsChangePassword">
+		<classes>
+			<class name="com.panther.testScripts.settings.SettingsChangePassword" />
+		</classes>
+	</test>
+	<test name="SettingsChangePersonalDetails">
+		<classes>
+			<class name="com.panther.testScripts.settings.SettingsChangePersonalDetails" />
+		</classes>
+	</test>
+	<test name="UnauthorisedNavigation">
+		<classes>
+			<class name="com.panther.testScripts.unauthorised.UnauthorisedNavigation" />
+		</classes>
+	</test>
+	
+</suite>
